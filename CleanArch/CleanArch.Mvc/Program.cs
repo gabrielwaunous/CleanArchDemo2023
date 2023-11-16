@@ -17,8 +17,9 @@ builder.Services.AddDbContext<UniversityDbContext>(options =>
 });
 
 //DependencyContainer.RegisterServices(builder.Services);
-builder.Services.AddScoped<ICourseRepository, CourseRepository>();
-builder.Services.AddScoped<ICourseService, CourseService>();
+//builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+//builder.Services.AddScoped<ICourseService, CourseService>();
+DependencyContainer.RegisterServices(builder.Services);
 
 var app = builder.Build();
 
